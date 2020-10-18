@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+.form {
+    width: 70vw;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+input {
+    width: 60vw;
+    padding: 10px;
+    border: 1px solid #46cb18;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    margin: 5px 100px 15px;  
+}
+input[type='text']:focus {
+    border: 1.3px solid #46cb18;
+    outline: none;
+}
+button{
+    padding: 10px;
+    background-color: #46cb18;
+    font-family: 'poppins';
+    border: none;
+    margin-left: 35px;
+    margin-bottom: 15px; 
+    margin: 5px 4px 15px 70px; 
+    outline: none;
+    cursor: pointer;
+}
