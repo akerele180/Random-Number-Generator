@@ -31,3 +31,18 @@ button{
     outline: none;
     cursor: pointer;
 }
+@media only screen and (min-width: 769){
+    div.wrapper {
+        width: 70vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+    div.form input#input {
+        width: 34vw;
+        margin: 0 0;
+        margin-left: 11px;
+    }
+    div.wrapper {
+        padding: 10px;
+    }
+}

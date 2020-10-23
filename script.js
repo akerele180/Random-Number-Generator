@@ -3,7 +3,7 @@ let input = document.querySelector('input');
 let button = document.querySelector('button');
 
 // ----------------------STYLING OF THE PAGE WITH JS---------------------- //
-document.querySelector('.wrapper').style.cssText = 'width: 70vw; margin: 0 auto; \
+document.querySelector('.wrapper').style.cssText = 'margin: 0 auto; \
 display: grid; grid-template-columns: repeat(9, 1fr)'
 document.body.style.cssText = 'text-align: center; font-family: poppins';
 document.getElementById('header').style.cssText = 'color: #46cb18; margin: 2px'
@@ -14,7 +14,8 @@ document.getElementsByTagName('h3')[0].style.cssText = 'margin: 5px auto 20px'
 // create a function that determines the random length of random numbers to be displayed
 button.addEventListener('click', function() {
     let inputValue = input.value;
-    document.querySelector('.wrapper').innerHTML = '';
+    document.querySelector('.wrapper').innerHTML = ''; //Clears the entire container displaying the numbers.
+    inputValue.textContent = ''; //Clears the input field 
     document.getElementById('alert').style.cssText = 'color: #ED2939; margin-bottom: 0; margin-right: 20px;'
     if(inputValue.length === 0){
         document.getElementById('alert').textContent = 'Enter number value on the input field to generate numbers'
