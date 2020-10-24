@@ -31,18 +31,51 @@ button{
     outline: none;
     cursor: pointer;
 }
-@media only screen and (min-width: 769){
+@media only screen and (min-width: 769px){
     div.wrapper {
         width: 70vw;
+    }
+    h1 {
+        margin: 2px;
+    }
+    h2 {
+        margin: 5px;
     }
 }
 @media only screen and (max-width: 768px) {
     div.form input#input {
-        width: 34vw;
+        width: 70vw; 
+        /* 4vw; */
         margin: 0 0;
-        margin-left: 11px;
+        /* margin-left: 11px; */
     }
     div.wrapper {
         padding: 10px;
+    }
+}
+
+@media only screen and (max-width : 375px){
+    h1 {
+        font-size: 2em;
+        margin: 30px auto 0
+    }
+    h2 {
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    input {
+        width: 70vw;
+
+    }
+    button {
+        margin-top: 15px;
+        margin-left: 0;
+        
+    }
+    div.wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }

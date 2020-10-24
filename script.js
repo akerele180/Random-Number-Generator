@@ -6,8 +6,8 @@ let button = document.querySelector('button');
 document.querySelector('.wrapper').style.cssText = 'margin: 0 auto; \
 display: grid; grid-template-columns: repeat(9, 1fr)'
 document.body.style.cssText = 'text-align: center; font-family: poppins';
-document.getElementById('header').style.cssText = 'color: #46cb18; margin: 2px'
-document.getElementsByTagName('h2')[0].style.cssText = 'margin: 5px'
+document.getElementById('header').style.cssText = 'color: #46cb18'
+// document.getElementsByTagName('h2')[0].style.cssText = 'margin: 5px'
 document.getElementsByTagName('h3')[0].style.cssText = 'margin: 5px auto 20px'
 
 /*-------------------------------LOGIC FOR THE INPUT FORM-------------------------------*/
